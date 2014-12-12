@@ -90,20 +90,20 @@
     .icon {
         @extend %xlarge;
         margin-right: .4rem;
-        &.icon-stats {
+    }
+    .icon-stats {
+        @include transition(color .3s linear);
+        color: $gray;
+        float: right;
+        &:hover {
             @include transition(color .3s linear);
-            color: $gray;
-            float: right;
+            color: $fresh-taiga;
+        }
+        &.active {
+            color: $fresh-taiga;
             &:hover {
                 @include transition(color .3s linear);
-                color: $fresh-taiga;
-            }
-            &.active {
-                color: $fresh-taiga;
-                &:hover {
-                    @include transition(color .3s linear);
-                    color: $gray;
-                }
+                color: $gray;
             }
         }
     }

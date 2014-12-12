@@ -4,7 +4,7 @@
         max-width: 700px;
         width: 100%;
     }
-    input[type="text"],
+    input,
     textarea {
         @extend %title;
     }
@@ -21,8 +21,11 @@
     }
     .button-green {
         color: $white;
-        display: block;
         text-align: center;
+        width: 100%;
+        &:hover {
+            color: $white;
+        }
     }
     .select-input-text {
         .field-with-option {

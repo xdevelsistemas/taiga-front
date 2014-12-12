@@ -48,6 +48,9 @@
         a {
             text-align: center;
             width: 100%;
+            &:hover {
+                color: $white;
+            }
         }
     }
     .v-pagination-previous,
