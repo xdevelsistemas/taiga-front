@@ -74,6 +74,7 @@ exports.files = function () {
         'modules/common/history',
         'modules/common/wizard',
         'modules/common/external-reference',
+        'modules/common/custom-fields',
 
         //Project modules
         'modules/home-projects-list',

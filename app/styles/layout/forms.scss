@@ -20,14 +20,14 @@ input[type="password"],
 select,
 textarea {
     @extend %title;
-    background: $whitish;
-    border: 1px solid $gray-light;
+    background: $very-light-gray;
+    border: 1px solid #b8b8b8;
     color: $grayer;
     margin: 0;
     padding: 8px;
     width: 100%;
     @include placeholder {
-        color: $gray-light;
+        color: lighten($gray, 15%);
     }
 }
 
