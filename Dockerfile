@@ -29,10 +29,6 @@ RUN (cd /taiga-front && gulp deploy)
 
 RUN (echo "alias ll='ls -atrhlF'" >> ~/.bashrc)
 
-VOLUME /taiga
-
-CMD mv /taiga-front/dist /taiga
-
 
 
 # forward request and error logs to docker log collector
@@ -44,7 +40,7 @@ VOLUME ["/etc/nginx"]
 VOLUME ["/var/log/nginx"]
 
 
-COPY /taiga /usr/local/nginx/html
+COPY /taiga-front/dist /usr/local/nginx/html
 #COPY build/taiga/static /usr/local/nginx/html
 COPY taiga.conf /etc/nginx/conf.d/default.conf
 
