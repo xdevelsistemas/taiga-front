@@ -44,7 +44,7 @@ VOLUME ["/etc/nginx"]
 VOLUME ["/var/log/nginx"]
 
 
-COPY /taiga-front/dist /usr/local/nginx/html
+COPY /taiga /usr/local/nginx/html
 #COPY build/taiga/static /usr/local/nginx/html
 COPY taiga.conf /etc/nginx/conf.d/default.conf
 
