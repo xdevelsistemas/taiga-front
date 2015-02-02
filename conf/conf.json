@@ -1,0 +1,12 @@
+{
+    "api": "http://taiga.xdevel.com.br/api/v1/",
+    "eventsUrl": "ws://taiga.xdevel.com.br/events",
+    "debug": true,
+    "publicRegisterEnabled": true,
+    "feedbackEnabled": true,
+    "privacyPolicyUrl": null,
+    "termsOfServiceUrl": null,
+    "maxUploadFileSize": null,
+    "gitHubClientId": null,
+    "contribPlugins": []
+}
