@@ -1,6 +1,6 @@
 {
-    "api": "http://taiga.xdevel.com.br/api/v1/",
-    "eventsUrl": "ws://taiga.xdevel.com.br/events",
+    "api": "http://taiga-back:8001/api/v1/",
+    "eventsUrl": null,
     "debug": true,
     "publicRegisterEnabled": true,
     "feedbackEnabled": true,
