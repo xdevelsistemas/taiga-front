@@ -40,12 +40,14 @@ VOLUME ["/etc/nginx"]
 VOLUME ["/var/log/nginx"]
 
 
-RUN  (cp -rfvp /taiga-front/dist /usr/local/nginx/html)
+
 #COPY build/taiga/static /usr/local/nginx/html
 COPY taiga.conf /etc/nginx/conf.d/default.conf
-
-ENV PATH /usr/local/nginx/sbin:$PATH
 WORKDIR /usr/local/nginx/html
+RUN  (cp -rfvp /taiga-front/dist .)
+ENV PATH /usr/local/nginx/sbin:$PATH
+
+
 
 EXPOSE 80 8000
 
