@@ -1,6 +1,6 @@
 version = ___VERSION___
 window.taigaConfig = {
-    "api": "http://localhost:8000/api/v1/",
+    "api": "http://taiga.xdevel.com.br/api/v1/",
     "eventsUrl": null,
     "debug": true,
     "publicRegisterEnabled": true,
