@@ -42,9 +42,10 @@ VOLUME ["/var/log/nginx"]
 
 
 #COPY build/taiga/static /usr/local/nginx/html
-COPY taiga.conf /etc/nginx/conf.d/default.conf
+COPY taiga.conf /etc/nginx/sites-enabled/default
 WORKDIR /usr/local/nginx/html
-RUN  (cp -rfvp /taiga-front/dist/* .) && (rm /etc/nginx/sites-enabled/default) 
+RUN  (cp -rfvp /taiga-front/dist/* .) 
+#RUN  (rm /etc/nginx/sites-enabled/default) 
 ENV PATH /usr/local/nginx/sbin:$PATH
 
 
